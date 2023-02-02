@@ -1,0 +1,41 @@
+<p class="result">%RESULT%</p>
+<h2>Új oldal felvitele</h2>
+<form method="post">
+    <label for="url">URL jelölő</label>
+    <input type="text" id="url" name="url" placeholder="URL jelölő"><br>
+    <label for="title">Oldal címe</label>
+    <input type="text" id="title" name="title" placeholder="Oldal címe"><br>
+    <label for="parent">Ősoldal</label>
+    <select name="parent" id="parent">
+        %PARENTS%
+    </select><br>
+    <label for="template">Oldal címe</label>
+    <input type="text" id="template" name="template" placeholder="Template fájl"><br>
+    <input type="submit" name="newpage" value="Oldal felvitele">
+</form>
+<br>
+<hr>
+<br>
+<h2>Új adat felvitele</h2>
+<form method="post">
+    <label for="key">Adatkulcs</label>
+    <input type="text" id="key" name="key" placeholder="Adatkulcs"><br>
+    <label for="data">Adat</label>
+    <textarea name="data" id="data"></textarea><br>
+    <label for="page">Oldal</label>
+    <select name="page" id="page">
+        %PAGES%
+    </select><br>
+    <input type="submit" name="newdata" value="Adat felvitele">
+</form>
+<br>
+<hr>
+<br>
+<h2>Új belépési infó</h2>
+<form method="post">
+    <label for="user">Új felhasználónév</label>
+    <input type="text" id="user" name="user" placeholder="Új felhasználónév"><br>
+    <label for="pass">Új jelszó</label>
+    <input type="password" id="pass" name="pass" placeholder="Új jelszó"><br>
+    <input type="submit" name="newpass" value="Belépés módosítása">
+</form>
